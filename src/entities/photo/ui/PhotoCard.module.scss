@@ -1,0 +1,39 @@
+.card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    background-color: #f3f4f6;
+    /* bg-gray-100 */
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.date {
+    color: white;
+    font-size: 0.875rem;
+    /* text-sm */
+    font-weight: 500;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.75rem;
+    /* text-xs */
+}

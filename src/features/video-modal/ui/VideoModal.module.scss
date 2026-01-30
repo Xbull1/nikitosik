@@ -1,0 +1,74 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    max-width: 56rem;
+    /* max-w-4xl */
+    overflow: hidden;
+    border-radius: 1rem;
+    /* rounded-2xl */
+    background-color: black;
+    aspect-ratio: 16 / 9;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background-color 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.videoWrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.video,
+.image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    pointer-events: none;
+    /* Allow clicks to pass through */
+}
+
+.title {
+    color: white;
+    font-size: 1.25rem;
+    /* text-xl */
+    font-weight: 600;
+}
+
+.date {
+    color: rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,16 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    /* Reduced from 600px for better performance/look */
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    /* transform removed - handled by JS */
+    /* mix-blend-mode: screen; */
+    /* Optional, but standard gradient works well on dark */
+    opacity: 0.8;
+}
